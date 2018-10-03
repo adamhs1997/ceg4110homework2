@@ -7,7 +7,7 @@ namespace Homework2 {
     class ClockModel {
 
         // Private class variables, inaccessible beyond this class
-        private ClockModel _model;
+        private static ClockModel _model = new ClockModel();
         private ClockController _controller;
         private int _second;
         private int _minute;
@@ -16,12 +16,8 @@ namespace Homework2 {
         private string _month;
         private int _year;
 
-        // Private constructor impolementing Singleton DP
+        // Private constructor implementing Singleton DP
         private ClockModel() {
-            // Instantiate our one instance
-            if (_model == null)
-                _model = new ClockModel();
-
             // Initialize to current times
             DateTime current = new DateTime();
             _second = current.Second;
@@ -30,12 +26,13 @@ namespace Homework2 {
             _day = current.Day;
             _month = current.ToString("MMMM");
             _year = current.Year;
+            Console.WriteLine("Model built");
         }
 
         // Public-facing getters and setters
         // If you aren't familiar with this C# syntax, read more about this here:
         // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties
-        public ClockModel Model { get => _model; }
+        public static ClockModel Model { get => _model; }
         public int Second { get => _second; set => _second = value; }
         public int Minute { get => _minute; set => _minute = value; }
         public int Hour { get => _hour; set => _hour = value; }

@@ -11,18 +11,23 @@ namespace Homework2 {
         private ClockModel _clockModel;
         private List<IClockView> _views;
 
-        private int temp = 3;
-
         public ClockController() {
+            // Use our singleton clock model
+            _clockModel = ClockModel.Model;
+            if (_clockModel == null) Console.WriteLine("null");
+
+            // Instantiate our views
             _views = new List<IClockView>();
+
+            // Run every second
             DelayedUpdate();
         }
 
         // Register our model and avoid the chicken-egg scenario
         // of doing this in a constructor
-        public void RegisterModel(ClockModel model) {
-            _clockModel = _clockModel.Model;
-        }
+        //public void RegisterModel(ClockModel model) {
+        //    _clockModel = _clockModel.Model;
+        //}
 
         // Register our model and avoid the chicken-egg scenario
         // of doing this in a constructor and give us flexibility
