@@ -1,0 +1,4 @@
+Homework2.AnalogClockView, Homework2;md516ada23da48d828f3a48b5a9b383a4e4.AnalogClockView
+Homework2.AnalogClockView, Homework2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md516ada23da48d828f3a48b5a9b383a4e4.AnalogClockView
+Homework2.AnalogClockView;md516ada23da48d828f3a48b5a9b383a4e4.AnalogClockView
+homework2.AnalogClockView;md516ada23da48d828f3a48b5a9b383a4e4.AnalogClockView
