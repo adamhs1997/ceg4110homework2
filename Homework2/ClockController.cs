@@ -68,7 +68,7 @@ namespace Homework2 {
         public int GetMinute() { return _clockModel.Minute; }
         public int GetHour() { return _clockModel.Hour; }
         public int GetDay() { return _clockModel.Day; }
-        public string GetMonth() { return _clockModel.Month; }
+        public int GetMonth() { return _clockModel.Month; }
         public int GetYear() { return _clockModel.Year; }
 
         public void SetSecond(int second) {
@@ -87,7 +87,7 @@ namespace Homework2 {
             _clockModel.Day = day;
         }
 
-        public void SetMonth(string month) {
+        public void SetMonth(int month) {
             _clockModel.Month = month;
         }
 
