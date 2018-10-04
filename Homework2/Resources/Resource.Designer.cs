@@ -47,6 +47,9 @@ namespace Homework2
 			// aapt resource value: 0x7f040004
 			public const int Day = 2130968580;
 			
+			// aapt resource value: 0x7f040006
+			public const int Do = 2130968582;
+			
 			// aapt resource value: 0x7f040000
 			public const int Hour = 2130968576;
 			
@@ -58,6 +61,9 @@ namespace Homework2
 			
 			// aapt resource value: 0x7f040002
 			public const int Second = 2130968578;
+			
+			// aapt resource value: 0x7f040007
+			public const int Undo = 2130968583;
 			
 			// aapt resource value: 0x7f040005
 			public const int Year = 2130968581;
