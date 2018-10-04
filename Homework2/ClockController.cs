@@ -71,28 +71,76 @@ namespace Homework2 {
         public int GetMonth() { return _clockModel.Month; }
         public int GetYear() { return _clockModel.Year; }
 
-        public void SetSecond(int second) {
-            _clockModel.Second = second;
+        //public void SetSecond(int second) {
+        //    _clockModel.Second = second;
+        //}
+
+        //public void SetMinute(int minute) {
+        //    _clockModel.Minute = minute;
+        //}
+
+        //public void SetHour(int hour) {
+        //    _clockModel.Hour = hour;
+        //}
+
+        //public void SetDay(int day) {
+        //    _clockModel.Day = day;
+        //}
+
+        //public void SetMonth(int month) {
+        //    _clockModel.Month = month;
+        //}
+
+        //public void SetYear(int year) {
+        //    _clockModel.Year = year;
+        //}
+
+        public void IncreaseSecond() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddSeconds(1);
         }
 
-        public void SetMinute(int minute) {
-            _clockModel.Minute = minute;
+        public void IncreaseMinute() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddMinutes(1);
         }
 
-        public void SetHour(int hour) {
-            _clockModel.Hour = hour;
+        public void IncreaseHour() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddHours(1);
         }
 
-        public void SetDay(int day) {
-            _clockModel.Day = day;
+        public void IncreaseDay() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddDays(1);
         }
 
-        public void SetMonth(int month) {
-            _clockModel.Month = month;
+        public void IncreaseMonth() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddMonths(1);
         }
 
-        public void SetYear(int year) {
-            _clockModel.Year = year;
+        public void IncreaseYear() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddYears(1);
+        }
+
+        public void DecreaseSecond() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddSeconds(-1);
+        }
+
+        public void DecreaseMinute() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddMinutes(-1);
+        }
+
+        public void DecreaseHour() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddHours(-1);
+        }
+
+        public void DecreaseDay() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddDays(-1);
+        }
+
+        public void DecreaseMonth() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddMonths(-1);
+        }
+
+        public void DecreaseYear() {
+            _clockModel.CurrentTime = _clockModel.CurrentTime.AddYears(-1);
         }
 
     }
