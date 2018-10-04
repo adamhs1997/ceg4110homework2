@@ -25,6 +25,22 @@ namespace Homework2 {
 
             // Register with the controller
             _controller.RegisterView(this);
+
+            Button Do = FindViewById<Button>(Resource.Id.Do);
+            Do.Click += HandleDo;
+
+            Button Undo = FindViewById<Button>(Resource.Id.Undo);
+            Undo.Click += HandleUndo;
+        }
+
+        private void HandleUndo(object sender, EventArgs e) {
+            ICommand command = new IncrementHour();
+            command.Revert();
+        }
+
+        private void HandleDo(object sender, EventArgs e) {
+            ICommand command = new IncrementHour();
+            command.Execute();
         }
 
         public void DisplayTime(int hour, int minute, int second, int month, int day, int year) {
