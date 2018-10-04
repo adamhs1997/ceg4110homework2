@@ -1,6 +1,6 @@
 ﻿namespace Homework2 {
 
-    // Concrete command to implement hour increases
+    // Concrete command to implement second increases
 
     class IncrementSecond : ICommand {
 
@@ -9,17 +9,11 @@
         private ClockController _controller = ClockController.Controller;
 
         public void Execute() {
-            if (_controller.GetSecond() != 59)
-                _controller.SetSecond(_controller.GetSecond() + 1);
-            else
-                _controller.SetSecond(0);
+            _controller.IncreaseSecond();
         }
 
         public void Revert() {
-            if (_controller.GetSecond() != 0)
-                _controller.SetSecond(_controller.GetSecond() - 1);
-            else
-                _controller.SetSecond(59);
+            _controller.DecreaseSecond();
         }
 
     }

@@ -1,19 +1,19 @@
 ﻿namespace Homework2 {
 
-    // Concrete command to implement minute increases
+    // Concrete command to implement month decreases
 
-    class IncrementMinute : ICommand {
+    class DecrementMonth : ICommand {
 
         // Hold our singleton command list and controller
         private CommandList _commands = CommandList.Commands;
         private ClockController _controller = ClockController.Controller;
 
         public void Execute() {
-            _controller.IncreaseMinute();
+            _controller.DecreaseMonth();
         }
 
         public void Revert() {
-            _controller.DecreaseMinute();
+            _controller.IncreaseMonth();
         }
 
     }
