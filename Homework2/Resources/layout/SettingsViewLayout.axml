@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/HourControl">
+        <TextView
+            android:text="Hour"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/HourPrompt" />
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/HourDec" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:id="@+id/HourCur" />
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/HourInc" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MinuteControl">
+        <TextView
+            android:text="Minute"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/MinutePrompt" />
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/MinuteDec" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:id="@+id/MinuteCur" />
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/MinuteInc" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SecondControl">
+        <TextView
+            android:text="Second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/SecondPrompt" />
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/SecondDec" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:id="@+id/SecondCur" />
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/SecondInc" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MonthControl">
+        <TextView
+            android:text="Month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/MonthPrompt" />
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/MonthDec" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:id="@+id/MonthCur" />
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/MonthInc" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DayControl">
+        <TextView
+            android:text="Day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/DayPrompt" />
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/DayDec" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:id="@+id/DayCur" />
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/DayInc" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Year">
+        <TextView
+            android:text="Year"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/YearPrompt" />
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/YearDec" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:id="@+id/YearCur" />
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/YearInc" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UndoRedo">
+        <Button
+            android:text="Undo Action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Undo" />
+        <Button
+            android:text="Redo Action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Redo" />
+    </LinearLayout>
+    <Button
+        android:text="Done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DoneSettings" />
+</LinearLayout>
