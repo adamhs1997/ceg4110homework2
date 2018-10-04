@@ -15,7 +15,7 @@ namespace Homework2 {
     public class AnalogClockView : Activity, IClockView {
 
         // Hold on to an instance of the controller
-        private ClockController _controller;
+        private ClockController _controller = ClockController.Controller;
         private CancellationTokenSource cts = new CancellationTokenSource();
 
         protected override void OnCreate(Bundle savedInstanceState) {
@@ -23,10 +23,6 @@ namespace Homework2 {
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.AnalogClockViewLayout);
-
-            // Note that this would usually only be in main activity driver
-            //ClockModel model = new ClockModel(); // unused for now
-            _controller = new ClockController();
 
             // Register with the controller
             _controller.RegisterView(this);

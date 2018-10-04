@@ -11,7 +11,10 @@ namespace Homework2 {
         private ClockModel _clockModel;
         private List<IClockView> _views;
 
-        public ClockController() {
+        // Use Singleton DP for clock controller
+        private static ClockController _controller = new ClockController();
+
+        private ClockController() {
             // Use our singleton clock model
             _clockModel = ClockModel.Model;
 
@@ -21,6 +24,9 @@ namespace Homework2 {
             // Run every second
             DelayedUpdate();
         }
+
+        // Static getter for our singleton clock controller
+        public static ClockController Controller { get => _controller; }
 
         // Register our model and avoid the chicken-egg scenario
         // of doing this in a constructor
