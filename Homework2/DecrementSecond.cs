@@ -2,24 +2,24 @@
 
     // Concrete command to implement hour increases
 
-    class IncrementHour : ICommand {
+    class DecrementSecond : ICommand {
 
         // Hold our singleton command list and controller
         private CommandList _commands = CommandList.Commands;
         private ClockController _controller = ClockController.Controller;
 
         public void Execute() {
-            if (_controller.GetHour() != 23)
-                _controller.SetHour(_controller.GetHour() + 1);
+            if (_controller.GetSecond() != 0)
+                _controller.SetSecond(_controller.GetSecond() - 1);
             else
-                _controller.SetHour(0);
+                _controller.SetSecond(59);
         }
 
         public void Revert() {
-            if (_controller.GetHour() != 0)
-                _controller.SetHour(_controller.GetHour() - 1);
+            if (_controller.GetSecond() != 59)
+                _controller.SetSecond(_controller.GetSecond() + 1);
             else
-                _controller.SetHour(23);
+                _controller.SetSecond(0);
         }
 
     }
