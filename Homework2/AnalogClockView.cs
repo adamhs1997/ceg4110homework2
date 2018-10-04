@@ -16,7 +16,6 @@ namespace Homework2 {
 
         // Hold on to an instance of the controller
         private ClockController _controller = ClockController.Controller;
-        private CancellationTokenSource cts = new CancellationTokenSource();
 
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
@@ -28,7 +27,7 @@ namespace Homework2 {
             _controller.RegisterView(this);
         }
 
-        public void DisplayTime(int hour, int minute, int second, string month, int day, int year) {
+        public void DisplayTime(int hour, int minute, int second, int month, int day, int year) {
             FindViewById<TextView>(Resource.Id.Hour).Text += hour;
             FindViewById<TextView>(Resource.Id.Minute).Text += minute;
             FindViewById<TextView>(Resource.Id.Second).Text += second;
