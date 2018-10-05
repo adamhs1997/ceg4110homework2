@@ -23,8 +23,12 @@ namespace Homework2 {
 
         // Add a new item to the end of the list
         public void AddCommand(ICommand command) {
-            _list.Add(command);
-            _currentPos++;
+            if (_maxPos == _currentPos) {
+                _list.Add(command);
+                _currentPos++;
+            } else
+                _list[++_currentPos] = command;
+
             _maxPos = _currentPos;
         }
 
