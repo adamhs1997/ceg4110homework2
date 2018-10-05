@@ -7,13 +7,13 @@ namespace Homework2 {
     class CommandList {
 
         // Create our instance of the list
-        private static List<ICommand> _list = new List<ICommand>();
+        private List<ICommand> _list = new List<ICommand>();
 
         // Hold on to the singleton command list
         private static CommandList _commandList = new CommandList();
 
         // Hold on to current and max indices in list
-        private int _currentPos = 0, _maxPos = 0;
+        private int _currentPos = -1, _maxPos = -1;
 
         // Privatize our constructor
         private CommandList() { }
@@ -30,13 +30,14 @@ namespace Homework2 {
 
         // Undo the last item in the list
         public void Undo() {
-            _list[_currentPos--].Revert();
+            if (_currentPos != -1)
+                _list[_currentPos--].Revert();
         }
 
         // Redo the next command
         public void Redo() {
             if (_currentPos < _maxPos)
-                _list[_currentPos++].Execute();
+                _list[++_currentPos].Execute();
         }
 
     }
