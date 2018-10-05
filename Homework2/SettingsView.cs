@@ -43,6 +43,9 @@ namespace Homework2 {
             // Handle undo/redo
             FindViewById<Button>(Resource.Id.Undo).Click += HandleUndo;
             FindViewById<Button>(Resource.Id.Redo).Click += HandleRedo;
+
+            // Kill activity when user is finished
+            FindViewById<Button>(Resource.Id.DoneSettings).Click += (s, e) => Finish();
         }
 
         // Use to resume time updates after settings are chosen
@@ -156,7 +159,7 @@ namespace Homework2 {
         private void HandleRedo(object sender, System.EventArgs e) {
             _list.Redo();
             UpdateSettingTime();
-        }       
+        }
 
     }
 }
