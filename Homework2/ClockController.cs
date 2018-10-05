@@ -14,12 +14,18 @@ namespace Homework2 {
         // Use Singleton DP for clock controller
         private static ClockController _controller = new ClockController();
 
+        // Use to track whether to actually update (turn off when user changing clock)
+        private bool _update;
+
         private ClockController() {
             // Use our singleton clock model
             _clockModel = ClockModel.Model;
 
             // Instantiate our views
             _views = new List<IClockView>();
+
+            // Allow updates
+            _update = true;
 
             // Run every second
             DelayedUpdate();
@@ -29,12 +35,6 @@ namespace Homework2 {
         public static ClockController Controller { get => _controller; }
 
         // Register our model and avoid the chicken-egg scenario
-        // of doing this in a constructor
-        //public void RegisterModel(ClockModel model) {
-        //    _clockModel = _clockModel.Model;
-        //}
-
-        // Register our model and avoid the chicken-egg scenario
         // of doing this in a constructor and give us flexibility
         // in adding more views
         public void RegisterView(IClockView view) {
@@ -42,7 +42,7 @@ namespace Homework2 {
         }
 
         // Update our views
-        public void UpdateViews() {
+        private void UpdateViews() {
             foreach (IClockView view in _views) {
                 view.DisplayTime(_clockModel.Hour, _clockModel.Minute,
                     _clockModel.Second, _clockModel.Month, _clockModel.Day,
@@ -52,11 +52,30 @@ namespace Homework2 {
 
         // Asynchronous method call to update views on the second
         // Courtesy: https://forums.xamarin.com/discussion/37393/how-to-update-a-viewtext-every-0-1-sec
-        public async Task DelayedUpdate() {
-            while (true) {
+        private async void DelayedUpdate() {
+            while (_update) {
                 UpdateViews();
                 await Task.Delay(1000, new CancellationToken());
             }
+        }
+
+        // Allow pausing of updates while user is modifying clock
+        public void PauseUpdates() {
+            // Kill updates to each view
+            _update = false;
+
+            // Suspend updates in the model
+            _clockModel.SuspendClock();
+        }
+
+        // Resume updates to views
+        public void ResumeUpdates() {
+            // Resume the clock ticking when settings are complete
+            _clockModel.ResumeClock();
+
+            // Update views again
+            _update = true;
+            _controller.DelayedUpdate();
         }
 
         // Create all our public-facing getters and setters to change model
@@ -70,30 +89,6 @@ namespace Homework2 {
         public int GetDay() { return _clockModel.Day; }
         public int GetMonth() { return _clockModel.Month; }
         public int GetYear() { return _clockModel.Year; }
-
-        //public void SetSecond(int second) {
-        //    _clockModel.Second = second;
-        //}
-
-        //public void SetMinute(int minute) {
-        //    _clockModel.Minute = minute;
-        //}
-
-        //public void SetHour(int hour) {
-        //    _clockModel.Hour = hour;
-        //}
-
-        //public void SetDay(int day) {
-        //    _clockModel.Day = day;
-        //}
-
-        //public void SetMonth(int month) {
-        //    _clockModel.Month = month;
-        //}
-
-        //public void SetYear(int year) {
-        //    _clockModel.Year = year;
-        //}
 
         public void IncreaseSecond() {
             _clockModel.CurrentTime = _clockModel.CurrentTime.AddSeconds(1);
