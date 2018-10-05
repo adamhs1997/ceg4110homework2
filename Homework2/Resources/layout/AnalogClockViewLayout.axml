@@ -34,13 +34,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/Year" />
     <Button
-        android:text="Do"
+        android:text="Settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Do" />
-    <Button
-        android:text="Undo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Undo" />
 </LinearLayout>
