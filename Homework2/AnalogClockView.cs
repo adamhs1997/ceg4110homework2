@@ -29,27 +29,19 @@ namespace Homework2 {
             Button Do = FindViewById<Button>(Resource.Id.Do);
             Do.Click += HandleDo;
 
-            Button Undo = FindViewById<Button>(Resource.Id.Undo);
-            Undo.Click += HandleUndo;
-        }
-
-        private void HandleUndo(object sender, EventArgs e) {
-            ICommand command = new IncrementHour();
-            command.Revert();
         }
 
         private void HandleDo(object sender, EventArgs e) {
-            ICommand command = new IncrementHour();
-            command.Execute();
+            StartActivity(typeof(SettingsView));
         }
 
         public void DisplayTime(int hour, int minute, int second, int month, int day, int year) {
-            FindViewById<TextView>(Resource.Id.Hour).Text += hour;
-            FindViewById<TextView>(Resource.Id.Minute).Text += minute;
-            FindViewById<TextView>(Resource.Id.Second).Text += second;
-            FindViewById<TextView>(Resource.Id.Month).Text += month;
-            FindViewById<TextView>(Resource.Id.Day).Text += day;
-            FindViewById<TextView>(Resource.Id.Year).Text += year;
+            FindViewById<TextView>(Resource.Id.Hour).Text = hour.ToString();
+            FindViewById<TextView>(Resource.Id.Minute).Text = minute.ToString();
+            FindViewById<TextView>(Resource.Id.Second).Text = second.ToString();
+            FindViewById<TextView>(Resource.Id.Month).Text = month.ToString();
+            FindViewById<TextView>(Resource.Id.Day).Text = day.ToString();
+            FindViewById<TextView>(Resource.Id.Year).Text = year.ToString();
         }
 
     }
