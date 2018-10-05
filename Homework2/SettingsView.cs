@@ -39,6 +39,10 @@ namespace Homework2 {
             FindViewById<Button>(Resource.Id.DayDec).Click += HandleDayDecrement;
             FindViewById<Button>(Resource.Id.YearInc).Click += HandleYearIncrement;
             FindViewById<Button>(Resource.Id.YearDec).Click += HandleYearDecrement;
+
+            // Handle undo/redo
+            FindViewById<Button>(Resource.Id.Undo).Click += HandleUndo;
+            FindViewById<Button>(Resource.Id.Redo).Click += HandleRedo;
         }
 
         // Use to resume time updates after settings are chosen
@@ -143,6 +147,16 @@ namespace Homework2 {
             _list.AddCommand(command);
             UpdateSettingTime();
         }
+
+        private void HandleUndo(object sender, System.EventArgs e) {
+            _list.Undo();
+            UpdateSettingTime();
+        }
+
+        private void HandleRedo(object sender, System.EventArgs e) {
+            _list.Redo();
+            UpdateSettingTime();
+        }       
 
     }
 }
