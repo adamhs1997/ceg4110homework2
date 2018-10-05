@@ -11,11 +11,20 @@ namespace Homework2 {
         // Hold on to an instance of the command list
         CommandList _list = CommandList.Commands;
 
+        // Use to update timing in the view
+        ClockController _controller = ClockController.Controller;
+
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
 
             // Call on the settings layout
             SetContentView(Resource.Layout.SettingsViewLayout);
+
+            // "Pause" the clock while user is changing settings
+            _controller.PauseUpdates();
+
+            // Set current times in the settings window
+            UpdateSettingTime();
 
             // Add our handlers
             FindViewById<Button>(Resource.Id.HourDec).Click += HandleHourDecrement;
@@ -32,76 +41,107 @@ namespace Homework2 {
             FindViewById<Button>(Resource.Id.YearDec).Click += HandleYearDecrement;
         }
 
+        // Use to resume time updates after settings are chosen
+        protected override void OnStop() {
+            base.OnStop();
+
+            _controller.ResumeUpdates();
+        }
+
+        // Use to update the times shown in the settings window
+        private void UpdateSettingTime() {
+            FindViewById<TextView>(Resource.Id.HourCur).Text = _controller.GetHour().ToString();
+            FindViewById<TextView>(Resource.Id.MinuteCur).Text = _controller.GetMinute().ToString();
+            FindViewById<TextView>(Resource.Id.SecondCur).Text = _controller.GetSecond().ToString();
+            FindViewById<TextView>(Resource.Id.MonthCur).Text = _controller.GetMonth().ToString();
+            FindViewById<TextView>(Resource.Id.DayCur).Text = _controller.GetDay().ToString();
+            FindViewById<TextView>(Resource.Id.YearCur).Text = _controller.GetYear().ToString();
+        }
+
+        // Implement our handlers
+
         private void HandleHourDecrement(object sender, System.EventArgs e) {
             ICommand command = new DecrementHour();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleHourIncrement(object sender, System.EventArgs e) {
             ICommand command = new IncrementHour();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleMinuteIncrement(object sender, System.EventArgs e) {
             ICommand command = new IncrementMinute();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleMinuteDecrement(object sender, System.EventArgs e) {
             ICommand command = new DecrementMinute();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleSecondIncrement(object sender, System.EventArgs e) {
             ICommand command = new IncrementSecond();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleSecondDecrement(object sender, System.EventArgs e) {
             ICommand command = new DecrementSecond();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleMonthIncrement(object sender, System.EventArgs e) {
             ICommand command = new IncrementMonth();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleMonthDecrement(object sender, System.EventArgs e) {
             ICommand command = new DecrementMonth();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleDayIncrement(object sender, System.EventArgs e) {
             ICommand command = new IncrementDay();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleDayDecrement(object sender, System.EventArgs e) {
             ICommand command = new DecrementDay();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleYearIncrement(object sender, System.EventArgs e) {
             ICommand command = new IncrementYear();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
         private void HandleYearDecrement(object sender, System.EventArgs e) {
             ICommand command = new DecrementYear();
             command.Execute();
             _list.AddCommand(command);
+            UpdateSettingTime();
         }
 
     }
