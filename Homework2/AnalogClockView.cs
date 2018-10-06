@@ -1,50 +1,32 @@
-﻿using Android.App;
-using Android.Widget;
-using Android.OS;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-using System.Timers;
-using System.Threading;
+using Android.App;
 using Android.Content;
-using System;
-using System.Threading.Tasks;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
 
 namespace Homework2 {
-
-    [Activity(Label = "Homework2", MainLauncher = true)]
-
-    public class AnalogClockView : Activity, IClockView {
-
-        // Hold on to an instance of the controller
-        private ClockController _controller = ClockController.Controller;
-
+    [Activity(Label = "AnalogClockView", MainLauncher = true)]
+    public class AnalogClockView : Activity {
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.AnalogClockViewLayout);
+            LinearLayout mainLayout = new LinearLayout(this);
+            LinearLayout.LayoutParams relParentParam = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MatchParent, RelativeLayout.LayoutParams.MatchParent);
+            mainLayout.LayoutParameters = relParentParam;
 
-            // Register with the controller
-            _controller.RegisterView(this);
+            CustomAnalogClock clock = new CustomAnalogClock(this);
+            LinearLayout.LayoutParams clockParam = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WrapContent, RelativeLayout.LayoutParams.WrapContent);
+            clock.LayoutParameters = clockParam;
 
-            Button Do = FindViewById<Button>(Resource.Id.Do);
-            Do.Click += HandleDo;
+            mainLayout.AddView(clock);
 
+            SetContentView(mainLayout, relParentParam);
         }
-
-        private void HandleDo(object sender, EventArgs e) {
-            StartActivity(typeof(SettingsView));
-        }
-
-        public void DisplayTime(int hour, int minute, int second, int month, int day, int year) {
-            FindViewById<TextView>(Resource.Id.Hour).Text = hour.ToString();
-            FindViewById<TextView>(Resource.Id.Minute).Text = minute.ToString();
-            FindViewById<TextView>(Resource.Id.Second).Text = second.ToString();
-            FindViewById<TextView>(Resource.Id.Month).Text = month.ToString();
-            FindViewById<TextView>(Resource.Id.Day).Text = day.ToString();
-            FindViewById<TextView>(Resource.Id.Year).Text = year.ToString();
-        }
-
     }
-
 }
-

@@ -1,0 +1,6 @@
+D:\Homework2\Homework2\AndroidBindings\Binding_Vectoranalogclock\bin\Debug\Binding_Vectoranalogclock.dll
+D:\Homework2\Homework2\AndroidBindings\Binding_Vectoranalogclock\bin\Debug\Binding_Vectoranalogclock.pdb
+D:\Homework2\Homework2\AndroidBindings\Binding_Vectoranalogclock\obj\Debug\Binding_Vectoranalogclock.csprojResolveAssemblyReference.cache
+D:\Homework2\Homework2\AndroidBindings\Binding_Vectoranalogclock\obj\Debug\Binding_Vectoranalogclock.csproj.CoreCompileInputs.cache
+D:\Homework2\Homework2\AndroidBindings\Binding_Vectoranalogclock\obj\Debug\Binding_Vectoranalogclock.dll
+D:\Homework2\Homework2\AndroidBindings\Binding_Vectoranalogclock\obj\Debug\Binding_Vectoranalogclock.pdb

@@ -1,0 +1,6 @@
+Binding for:
+turki.alkhateeb:vectoranalogclock:1.0.0
+
+Dependencies:
+
+vectoranalogclock-1.0.0.aar,    Path=C:\Users\ajhs2\.gradle\caches\modules-2\files-2.1\turki.alkhateeb\vectoranalogclock\1.0.0\3d707c953a33b2e5094084aa758929c34a21a18a\vectoranalogclock-1.0.0.aar

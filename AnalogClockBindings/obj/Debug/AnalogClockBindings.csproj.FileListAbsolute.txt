@@ -1,0 +1,16 @@
+D:\Homework2\AnalogClockBindings\bin\Debug\AnalogClockBindings.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\AnalogClockBindings.pdb
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.Annotations.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.Compat.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.Core.UI.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.Core.Utils.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.Fragment.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.Media.Compat.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Homework2\AnalogClockBindings\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+D:\Homework2\AnalogClockBindings\obj\Debug\AnalogClockBindings.csprojResolveAssemblyReference.cache
+D:\Homework2\AnalogClockBindings\obj\Debug\AnalogClockBindings.csproj.CoreCompileInputs.cache
+D:\Homework2\AnalogClockBindings\obj\Debug\AnalogClockBindings.dll
+D:\Homework2\AnalogClockBindings\obj\Debug\AnalogClockBindings.pdb
