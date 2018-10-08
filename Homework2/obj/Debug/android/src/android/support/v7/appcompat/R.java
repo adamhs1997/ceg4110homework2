@@ -245,6 +245,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int background=0x7f01000c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int backgroundColor=0x7f0100eb;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -546,6 +555,16 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int controlBackground=0x7f010088;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int cornerSize=0x7f0100e9;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -905,6 +924,16 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
+        public static int padding=0x7f0100e8;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
         public static int paddingBottomNoButtons=0x7f0100b7;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -1225,6 +1254,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int textAppearanceSmallPopupMenu=0x7f010055;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int textColor=0x7f0100ea;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -1237,6 +1275,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static int textColorSearchUrl=0x7f010070;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int textSize=0x7f0100e7;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1866,47 +1914,47 @@ containing a value of this type.
         public static int second_hand=0x7f020060;
     }
     public static final class id {
-        public static int Day=0x7f0a0075;
-        public static int DayControl=0x7f0a008c;
-        public static int DayCur=0x7f0a008f;
-        public static int DayDec=0x7f0a008e;
-        public static int DayInc=0x7f0a0090;
-        public static int DayPrompt=0x7f0a008d;
-        public static int Do=0x7f0a0077;
-        public static int DoneSettings=0x7f0a0098;
-        public static int Hour=0x7f0a0071;
-        public static int HourControl=0x7f0a0078;
-        public static int HourCur=0x7f0a007b;
-        public static int HourDec=0x7f0a007a;
-        public static int HourInc=0x7f0a007c;
-        public static int HourPrompt=0x7f0a0079;
-        public static int Minute=0x7f0a0072;
-        public static int MinuteControl=0x7f0a007d;
-        public static int MinuteCur=0x7f0a0080;
-        public static int MinuteDec=0x7f0a007f;
-        public static int MinuteInc=0x7f0a0081;
-        public static int MinutePrompt=0x7f0a007e;
-        public static int Month=0x7f0a0074;
-        public static int MonthControl=0x7f0a0087;
-        public static int MonthCur=0x7f0a008a;
-        public static int MonthDec=0x7f0a0089;
-        public static int MonthInc=0x7f0a008b;
-        public static int MonthPrompt=0x7f0a0088;
-        public static int Redo=0x7f0a0097;
-        public static int Second=0x7f0a0073;
-        public static int SecondControl=0x7f0a0082;
-        public static int SecondCur=0x7f0a0085;
-        public static int SecondDec=0x7f0a0084;
-        public static int SecondInc=0x7f0a0086;
-        public static int SecondPrompt=0x7f0a0083;
-        public static int Undo=0x7f0a0096;
-        public static int UndoRedo=0x7f0a0095;
-        public static int Year=0x7f0a0076;
-        public static int YearCur=0x7f0a0093;
-        public static int YearDec=0x7f0a0092;
-        public static int YearInc=0x7f0a0094;
-        public static int YearPrompt=0x7f0a0091;
-        public static int action0=0x7f0a005d;
+        public static int Day=0x7f0a0076;
+        public static int DayControl=0x7f0a008d;
+        public static int DayCur=0x7f0a0090;
+        public static int DayDec=0x7f0a008f;
+        public static int DayInc=0x7f0a0091;
+        public static int DayPrompt=0x7f0a008e;
+        public static int Do=0x7f0a0078;
+        public static int DoneSettings=0x7f0a0099;
+        public static int Hour=0x7f0a0072;
+        public static int HourControl=0x7f0a0079;
+        public static int HourCur=0x7f0a007c;
+        public static int HourDec=0x7f0a007b;
+        public static int HourInc=0x7f0a007d;
+        public static int HourPrompt=0x7f0a007a;
+        public static int Minute=0x7f0a0073;
+        public static int MinuteControl=0x7f0a007e;
+        public static int MinuteCur=0x7f0a0081;
+        public static int MinuteDec=0x7f0a0080;
+        public static int MinuteInc=0x7f0a0082;
+        public static int MinutePrompt=0x7f0a007f;
+        public static int Month=0x7f0a0075;
+        public static int MonthControl=0x7f0a0088;
+        public static int MonthCur=0x7f0a008b;
+        public static int MonthDec=0x7f0a008a;
+        public static int MonthInc=0x7f0a008c;
+        public static int MonthPrompt=0x7f0a0089;
+        public static int Redo=0x7f0a0098;
+        public static int Second=0x7f0a0074;
+        public static int SecondControl=0x7f0a0083;
+        public static int SecondCur=0x7f0a0086;
+        public static int SecondDec=0x7f0a0085;
+        public static int SecondInc=0x7f0a0087;
+        public static int SecondPrompt=0x7f0a0084;
+        public static int Undo=0x7f0a0097;
+        public static int UndoRedo=0x7f0a0096;
+        public static int Year=0x7f0a0077;
+        public static int YearCur=0x7f0a0094;
+        public static int YearDec=0x7f0a0093;
+        public static int YearInc=0x7f0a0095;
+        public static int YearPrompt=0x7f0a0092;
+        public static int action0=0x7f0a005e;
         public static int action_bar=0x7f0a0047;
         public static int action_bar_activity_content=0x7f0a0000;
         public static int action_bar_container=0x7f0a0046;
@@ -1914,17 +1962,17 @@ containing a value of this type.
         public static int action_bar_spinner=0x7f0a0001;
         public static int action_bar_subtitle=0x7f0a0025;
         public static int action_bar_title=0x7f0a0024;
-        public static int action_container=0x7f0a005a;
+        public static int action_container=0x7f0a005b;
         public static int action_context_bar=0x7f0a0048;
-        public static int action_divider=0x7f0a0061;
-        public static int action_image=0x7f0a005b;
+        public static int action_divider=0x7f0a0062;
+        public static int action_image=0x7f0a005c;
         public static int action_menu_divider=0x7f0a0002;
         public static int action_menu_presenter=0x7f0a0003;
         public static int action_mode_bar=0x7f0a0044;
         public static int action_mode_bar_stub=0x7f0a0043;
         public static int action_mode_close_button=0x7f0a0026;
-        public static int action_text=0x7f0a005c;
-        public static int actions=0x7f0a006a;
+        public static int action_text=0x7f0a005d;
+        public static int actions=0x7f0a006b;
         public static int activity_chooser_view_content=0x7f0a0027;
         public static int add=0x7f0a0018;
         public static int alertTitle=0x7f0a003b;
@@ -1932,9 +1980,9 @@ containing a value of this type.
         public static int beginning=0x7f0a001a;
         public static int bottom=0x7f0a0022;
         public static int buttonPanel=0x7f0a002e;
-        public static int cancel_action=0x7f0a005e;
+        public static int cancel_action=0x7f0a005f;
         public static int checkbox=0x7f0a003e;
-        public static int chronometer=0x7f0a0066;
+        public static int chronometer=0x7f0a0067;
         public static int collapseActionView=0x7f0a001e;
         public static int contentPanel=0x7f0a0031;
         public static int custom=0x7f0a0038;
@@ -1944,7 +1992,7 @@ containing a value of this type.
         public static int disableHome=0x7f0a000c;
         public static int edit_query=0x7f0a0049;
         public static int end=0x7f0a001b;
-        public static int end_padder=0x7f0a0070;
+        public static int end_padder=0x7f0a0071;
         public static int expand_activities_button=0x7f0a0028;
         public static int expanded_menu=0x7f0a003d;
         public static int face=0x7f0a0056;
@@ -1952,30 +2000,30 @@ containing a value of this type.
         public static int homeAsUp=0x7f0a000d;
         public static int hour=0x7f0a0057;
         public static int icon=0x7f0a002c;
-        public static int icon_group=0x7f0a006b;
+        public static int icon_group=0x7f0a006c;
         public static int ifRoom=0x7f0a001f;
         public static int image=0x7f0a0029;
-        public static int info=0x7f0a0067;
-        public static int line1=0x7f0a006c;
-        public static int line3=0x7f0a006e;
+        public static int info=0x7f0a0068;
+        public static int line1=0x7f0a006d;
+        public static int line3=0x7f0a006f;
         public static int listMode=0x7f0a0009;
         public static int list_item=0x7f0a002b;
-        public static int media_actions=0x7f0a0060;
+        public static int media_actions=0x7f0a0061;
         public static int middle=0x7f0a001c;
         public static int minute=0x7f0a0058;
         public static int multiply=0x7f0a0013;
         public static int never=0x7f0a0020;
         public static int none=0x7f0a000e;
         public static int normal=0x7f0a000a;
-        public static int notification_background=0x7f0a0069;
-        public static int notification_main_column=0x7f0a0063;
-        public static int notification_main_column_container=0x7f0a0062;
+        public static int notification_background=0x7f0a006a;
+        public static int notification_main_column=0x7f0a0064;
+        public static int notification_main_column_container=0x7f0a0063;
         public static int parentPanel=0x7f0a0030;
         public static int progress_circular=0x7f0a0005;
         public static int progress_horizontal=0x7f0a0006;
         public static int radio=0x7f0a0040;
-        public static int right_icon=0x7f0a0068;
-        public static int right_side=0x7f0a0064;
+        public static int right_icon=0x7f0a0069;
+        public static int right_side=0x7f0a0065;
         public static int screen=0x7f0a0014;
         public static int scrollIndicatorDown=0x7f0a0036;
         public static int scrollIndicatorUp=0x7f0a0032;
@@ -2001,15 +2049,16 @@ containing a value of this type.
         public static int src_atop=0x7f0a0015;
         public static int src_in=0x7f0a0016;
         public static int src_over=0x7f0a0017;
-        public static int status_bar_latest_event_content=0x7f0a005f;
+        public static int status_bar_latest_event_content=0x7f0a0060;
         public static int submenuarrow=0x7f0a0041;
         public static int submit_area=0x7f0a0052;
+        public static int tabDigit1=0x7f0a005a;
         public static int tabMode=0x7f0a000b;
-        public static int text=0x7f0a006f;
-        public static int text2=0x7f0a006d;
+        public static int text=0x7f0a0070;
+        public static int text2=0x7f0a006e;
         public static int textSpacerNoButtons=0x7f0a0035;
         public static int textSpacerNoTitle=0x7f0a0034;
-        public static int time=0x7f0a0065;
+        public static int time=0x7f0a0066;
         public static int title=0x7f0a002d;
         public static int titleDividerNoCustom=0x7f0a003c;
         public static int title_template=0x7f0a003a;
@@ -2056,27 +2105,28 @@ containing a value of this type.
         public static int abc_select_dialog_material=0x7f03001a;
         public static int analog_clock=0x7f03001b;
         public static int analogclockviewlayout=0x7f03001c;
-        public static int notification_action=0x7f03001d;
-        public static int notification_action_tombstone=0x7f03001e;
-        public static int notification_media_action=0x7f03001f;
-        public static int notification_media_cancel_action=0x7f030020;
-        public static int notification_template_big_media=0x7f030021;
-        public static int notification_template_big_media_custom=0x7f030022;
-        public static int notification_template_big_media_narrow=0x7f030023;
-        public static int notification_template_big_media_narrow_custom=0x7f030024;
-        public static int notification_template_custom_big=0x7f030025;
-        public static int notification_template_icon_group=0x7f030026;
-        public static int notification_template_lines_media=0x7f030027;
-        public static int notification_template_media=0x7f030028;
-        public static int notification_template_media_custom=0x7f030029;
-        public static int notification_template_part_chronometer=0x7f03002a;
-        public static int notification_template_part_time=0x7f03002b;
-        public static int prototypeviewlayout=0x7f03002c;
-        public static int select_dialog_item_material=0x7f03002d;
-        public static int select_dialog_multichoice_material=0x7f03002e;
-        public static int select_dialog_singlechoice_material=0x7f03002f;
-        public static int settingsviewlayout=0x7f030030;
-        public static int support_simple_spinner_dropdown_item=0x7f030031;
+        public static int digitalclockviewlayout=0x7f03001d;
+        public static int notification_action=0x7f03001e;
+        public static int notification_action_tombstone=0x7f03001f;
+        public static int notification_media_action=0x7f030020;
+        public static int notification_media_cancel_action=0x7f030021;
+        public static int notification_template_big_media=0x7f030022;
+        public static int notification_template_big_media_custom=0x7f030023;
+        public static int notification_template_big_media_narrow=0x7f030024;
+        public static int notification_template_big_media_narrow_custom=0x7f030025;
+        public static int notification_template_custom_big=0x7f030026;
+        public static int notification_template_icon_group=0x7f030027;
+        public static int notification_template_lines_media=0x7f030028;
+        public static int notification_template_media=0x7f030029;
+        public static int notification_template_media_custom=0x7f03002a;
+        public static int notification_template_part_chronometer=0x7f03002b;
+        public static int notification_template_part_time=0x7f03002c;
+        public static int prototypeviewlayout=0x7f03002d;
+        public static int select_dialog_item_material=0x7f03002e;
+        public static int select_dialog_multichoice_material=0x7f03002f;
+        public static int select_dialog_singlechoice_material=0x7f030030;
+        public static int settingsviewlayout=0x7f030031;
+        public static int support_simple_spinner_dropdown_item=0x7f030032;
     }
     public static final class string {
         public static int abc_action_bar_home_description=0x7f050000;
@@ -6482,6 +6532,106 @@ containing a value of this type.
           @attr name android.support.v7.appcompat:trackTintMode
         */
         public static int SwitchCompat_trackTintMode = 7;
+        /** Attributes that can be used with a TabDigit.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TabDigit_backgroundColor android.support.v7.appcompat:backgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabDigit_cornerSize android.support.v7.appcompat:cornerSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabDigit_padding android.support.v7.appcompat:padding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabDigit_textColor android.support.v7.appcompat:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabDigit_textSize android.support.v7.appcompat:textSize}</code></td><td></td></tr>
+           </table>
+           @see #TabDigit_backgroundColor
+           @see #TabDigit_cornerSize
+           @see #TabDigit_padding
+           @see #TabDigit_textColor
+           @see #TabDigit_textSize
+         */
+        public static final int[] TabDigit = {
+            0x7f0100e7, 0x7f0100e8, 0x7f0100e9, 0x7f0100ea,
+            0x7f0100eb
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.appcompat.R.attr#backgroundColor}
+          attribute's value can be found in the {@link #TabDigit} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.appcompat:backgroundColor
+        */
+        public static int TabDigit_backgroundColor = 4;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.appcompat.R.attr#cornerSize}
+          attribute's value can be found in the {@link #TabDigit} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.appcompat:cornerSize
+        */
+        public static int TabDigit_cornerSize = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.appcompat.R.attr#padding}
+          attribute's value can be found in the {@link #TabDigit} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.appcompat:padding
+        */
+        public static int TabDigit_padding = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.appcompat.R.attr#textColor}
+          attribute's value can be found in the {@link #TabDigit} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.appcompat:textColor
+        */
+        public static int TabDigit_textColor = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.appcompat.R.attr#textSize}
+          attribute's value can be found in the {@link #TabDigit} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.appcompat:textSize
+        */
+        public static int TabDigit_textSize = 0;
         /** Attributes that can be used with a TextAppearance.
            <p>Includes the following attributes:</p>
            <table>

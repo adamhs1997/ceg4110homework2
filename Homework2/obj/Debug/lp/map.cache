@@ -1,4 +1,5 @@
 AnalogClockBindings
+DigitalClockBindings
 System.Runtime
 Xamarin.Android.Support.Animated.Vector.Drawable
 Xamarin.Android.Support.Annotations

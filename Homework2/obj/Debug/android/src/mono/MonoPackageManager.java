@@ -108,6 +108,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "Homework2.dll" comes first in this list. */
 		"Homework2.dll",
 		"AnalogClockBindings.dll",
+		"DigitalClockBindings.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Annotations.dll",
 		"Xamarin.Android.Support.Compat.dll",

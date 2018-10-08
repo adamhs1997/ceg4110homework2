@@ -1,5 +1,6 @@
 D:\Homework2\Homework2\obj\Debug\android\assets\Homework2.dll
 D:\Homework2\Homework2\obj\Debug\android\assets\AnalogClockBindings.dll
+D:\Homework2\Homework2\obj\Debug\android\assets\DigitalClockBindings.dll
 D:\Homework2\Homework2\obj\Debug\android\assets\Java.Interop.dll
 D:\Homework2\Homework2\obj\Debug\android\assets\Mono.Android.dll
 D:\Homework2\Homework2\obj\Debug\android\assets\mscorlib.dll

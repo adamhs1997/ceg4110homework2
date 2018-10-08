@@ -1,0 +1,6 @@
+D:\Homework2\Homework2\AndroidBindings\DigitalClockBindings\bin\Debug\DigitalClockBindings.dll
+D:\Homework2\Homework2\AndroidBindings\DigitalClockBindings\bin\Debug\DigitalClockBindings.pdb
+D:\Homework2\Homework2\AndroidBindings\DigitalClockBindings\obj\Debug\DigitalClockBindings.csproj.CoreCompileInputs.cache
+D:\Homework2\Homework2\AndroidBindings\DigitalClockBindings\obj\Debug\DigitalClockBindings.dll
+D:\Homework2\Homework2\AndroidBindings\DigitalClockBindings\obj\Debug\DigitalClockBindings.pdb
+D:\Homework2\Homework2\AndroidBindings\DigitalClockBindings\obj\Debug\DigitalClockBindings.csprojResolveAssemblyReference.cache

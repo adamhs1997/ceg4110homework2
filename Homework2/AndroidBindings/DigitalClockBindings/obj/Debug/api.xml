@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.xenione.digit">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="com.xenione.digit.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.xenione.digit&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="102" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0.2&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MatrixHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MatrixHelper" static="false" type="com.xenione.digit.MatrixHelper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="mirrorX" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rotateX" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rotateZ" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="translate" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="translateY" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="MIRROR_X" static="true" transient="false" type="android.graphics.Matrix" type-generic-aware="android.graphics.Matrix" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROTATE_X_0" static="true" transient="false" type="android.graphics.Matrix" type-generic-aware="android.graphics.Matrix" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROTATE_X_90" static="true" transient="false" type="android.graphics.Matrix" type-generic-aware="android.graphics.Matrix" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="camera" static="true" transient="false" type="android.graphics.Camera" type-generic-aware="android.graphics.Camera" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="TabDigit" static="false" visibility="public">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TabDigit" static="false" type="com.xenione.digit.TabDigit" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TabDigit" static="false" type="com.xenione.digit.TabDigit" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TabDigit" static="false" type="com.xenione.digit.TabDigit" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TabDigit" static="false" type="com.xenione.digit.TabDigit" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="elapsedTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBackgroundColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChars" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCornerSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPadding" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChar" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChars" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="char[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCornerSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDividerColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPadding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTextColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTextSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sync" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="TabDigit.Tab" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TabDigit.Tab" static="false" type="com.xenione.digit.TabDigit.Tab" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="maxHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="maxWith" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="measure" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="next" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rotate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChar" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+</package>
+</api>

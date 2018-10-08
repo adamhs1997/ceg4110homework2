@@ -14,7 +14,7 @@ using Android.Widget;
 using Java.Util;
 
 namespace Homework2 {
-    [Activity(Label = "AnalogClockView", MainLauncher = true)]
+    [Activity(Label = "AnalogClockView")]
     public class AnalogClockView : Activity, IClockView {
 
         CustomAnalogClock clock;
