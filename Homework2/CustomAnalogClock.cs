@@ -6,7 +6,7 @@ using Com.Turki.Vectoranalogclockview;
 
 namespace Homework2 {
 
-    [Register("Homework2.CustomAnalogClock", DoNotGenerateAcw = true)]
+    [Register("Homework2.CustomAnalogClock")]
 
     class CustomAnalogClock : VectorAnalogClock {
 
