@@ -80,5 +80,5 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="#FFFFFF"
-        android:id="@+id/DigitalDate"/>
+        android:id="@+id/DigitalDate" />
 </LinearLayout>
