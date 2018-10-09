@@ -14,7 +14,7 @@ using Com.Xenione.Digit;
    
 namespace Homework2 {
 
-    [Activity(Label = "Activity1", MainLauncher = true)]
+    [Activity(Label = "Clock Master")]
 
     public class DigitalClockView : Activity, IClockView {
 

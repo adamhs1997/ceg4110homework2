@@ -4,7 +4,7 @@ using Android.Widget;
 
 namespace Homework2 {
 
-    [Activity(Label = "SettingsView")]
+    [Activity(Label = "Clock Master")]
 
     public class SettingsView : Activity {
 

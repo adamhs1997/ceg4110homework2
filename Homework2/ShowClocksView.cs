@@ -7,7 +7,7 @@ using Android.Widget;
 
 namespace Homework2 {
 
-    [Activity(Label = "ShowClocksView")]
+    [Activity(Label = "Clock Master")]
 
     public class ShowClocksView : Activity {
 

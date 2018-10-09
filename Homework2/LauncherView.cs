@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Homework2 {
 
-    [Activity(Label = "LauncherView", MainLauncher = true)]
+    [Activity(Label = "Clock Master", MainLauncher = true)]
 
     public class LauncherView : Activity {
 
