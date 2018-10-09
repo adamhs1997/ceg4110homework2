@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Homework2 {
 
@@ -23,11 +24,15 @@ namespace Homework2 {
 
         // Add a new item to the end of the list
         public void AddCommand(ICommand command) {
-            if (_maxPos == _currentPos) {
-                _list.Add(command);
+            try {
+                // Try to add in place
+                _list[_currentPos + 1] = command;
                 _currentPos++;
-            } else
-                _list[++_currentPos] = command;
+            } catch {
+                // Otherwise add to end
+                _list.Add(command);
+                ++_currentPos;
+            }
 
             _maxPos = _currentPos;
         }
