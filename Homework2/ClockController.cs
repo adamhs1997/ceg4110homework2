@@ -9,7 +9,12 @@ namespace Homework2 {
 
         // Hold private references to model and view
         private ClockModel _clockModel;
+
+        // This stores all views, opened or otherwise
         private List<IClockView> _views;
+
+        // This shows only views that user currently has open
+        private List<IClockView> _openViews;
 
         // Use Singleton DP for clock controller
         private static ClockController _controller = new ClockController();
@@ -23,6 +28,7 @@ namespace Homework2 {
 
             // Instantiate our views
             _views = new List<IClockView>();
+            _openViews = new List<IClockView>();
 
             // Allow updates
             _update = true;
@@ -83,12 +89,18 @@ namespace Homework2 {
         // variable is the private _var as defined in the class. This is 
         // equivalent to calling Var.getVar / Var.setVar.
 
+        public List<IClockView> GetClockList() { return _views; }
+        public List<IClockView> GetOpenClocks() { return _openViews; }
         public int GetSecond() { return _clockModel.Second; }
         public int GetMinute() { return _clockModel.Minute; }
         public int GetHour() { return _clockModel.Hour; }
         public int GetDay() { return _clockModel.Day; }
         public int GetMonth() { return _clockModel.Month; }
         public int GetYear() { return _clockModel.Year; }
+
+        public void AddOpenClock(IClockView clock) {
+            _openViews.Add(clock);
+        }
 
         public void IncreaseSecond() {
             _clockModel.CurrentTime = _clockModel.CurrentTime.AddSeconds(1);
