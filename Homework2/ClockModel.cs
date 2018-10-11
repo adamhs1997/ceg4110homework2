@@ -10,10 +10,10 @@ namespace Homework2 {
 
         // Private class variables, inaccessible beyond this class
         private static ClockModel _model = new ClockModel();
-        DateTime _current = DateTime.Now;
+        private DateTime _current = DateTime.Now;
 
         // Make note if model will actually update (pauses if user updating clock)
-        bool _update;
+        private bool _update;
 
         // Private constructor implementing Singleton DP
         private ClockModel() {
