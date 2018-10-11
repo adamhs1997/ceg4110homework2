@@ -1702,8 +1702,11 @@ namespace Homework2
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a007c
-			public const int Day = 2131361916;
+			// aapt resource value: 0x7f0a0065
+			public const int AddAnalog = 2131361893;
+			
+			// aapt resource value: 0x7f0a0064
+			public const int AddDigital = 2131361892;
 			
 			// aapt resource value: 0x7f0a0093
 			public const int DayControl = 2131361939;
@@ -1720,14 +1723,17 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0094
 			public const int DayPrompt = 2131361940;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int Do = 2131361918;
+			// aapt resource value: 0x7f0a0061
+			public const int DigitalDate = 2131361889;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int DoneSettings = 2131361951;
+			// aapt resource value: 0x7f0a00a0
+			public const int DoneSettings = 2131361952;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int Hour = 2131361912;
+			// aapt resource value: 0x7f0a005b
+			public const int Hour1 = 2131361883;
+			
+			// aapt resource value: 0x7f0a005c
+			public const int Hour2 = 2131361884;
 			
 			// aapt resource value: 0x7f0a007f
 			public const int HourControl = 2131361919;
@@ -1744,8 +1750,17 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0080
 			public const int HourPrompt = 2131361920;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int Minute = 2131361913;
+			// aapt resource value: 0x7f0a0063
+			public const int InstructionText = 2131361891;
+			
+			// aapt resource value: 0x7f0a0062
+			public const int MainMenuText = 2131361890;
+			
+			// aapt resource value: 0x7f0a005d
+			public const int Minute1 = 2131361885;
+			
+			// aapt resource value: 0x7f0a005e
+			public const int Minute2 = 2131361886;
 			
 			// aapt resource value: 0x7f0a0084
 			public const int MinuteControl = 2131361924;
@@ -1762,9 +1777,6 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0085
 			public const int MinutePrompt = 2131361925;
 			
-			// aapt resource value: 0x7f0a007b
-			public const int Month = 2131361915;
-			
 			// aapt resource value: 0x7f0a008e
 			public const int MonthControl = 2131361934;
 			
@@ -1780,11 +1792,14 @@ namespace Homework2
 			// aapt resource value: 0x7f0a008f
 			public const int MonthPrompt = 2131361935;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int Redo = 2131361950;
+			// aapt resource value: 0x7f0a009f
+			public const int Redo = 2131361951;
 			
-			// aapt resource value: 0x7f0a007a
-			public const int Second = 2131361914;
+			// aapt resource value: 0x7f0a005f
+			public const int Second1 = 2131361887;
+			
+			// aapt resource value: 0x7f0a0060
+			public const int Second2 = 2131361888;
 			
 			// aapt resource value: 0x7f0a0089
 			public const int SecondControl = 2131361929;
@@ -1801,29 +1816,35 @@ namespace Homework2
 			// aapt resource value: 0x7f0a008a
 			public const int SecondPrompt = 2131361930;
 			
+			// aapt resource value: 0x7f0a009e
+			public const int Undo = 2131361950;
+			
 			// aapt resource value: 0x7f0a009d
-			public const int Undo = 2131361949;
+			public const int UndoRedo = 2131361949;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int UndoRedo = 2131361948;
+			// aapt resource value: 0x7f0a0066
+			public const int ViewOpen = 2131361894;
 			
-			// aapt resource value: 0x7f0a007d
-			public const int Year = 2131361917;
-			
-			// aapt resource value: 0x7f0a009a
-			public const int YearCur = 2131361946;
-			
-			// aapt resource value: 0x7f0a0099
-			public const int YearDec = 2131361945;
-			
-			// aapt resource value: 0x7f0a009b
-			public const int YearInc = 2131361947;
+			// aapt resource value: 0x7f0a0067
+			public const int ViewSettings = 2131361895;
 			
 			// aapt resource value: 0x7f0a0098
-			public const int YearPrompt = 2131361944;
+			public const int Year = 2131361944;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int action0 = 2131361892;
+			// aapt resource value: 0x7f0a009b
+			public const int YearCur = 2131361947;
+			
+			// aapt resource value: 0x7f0a009a
+			public const int YearDec = 2131361946;
+			
+			// aapt resource value: 0x7f0a009c
+			public const int YearInc = 2131361948;
+			
+			// aapt resource value: 0x7f0a0099
+			public const int YearPrompt = 2131361945;
+			
+			// aapt resource value: 0x7f0a006b
+			public const int action0 = 2131361899;
 			
 			// aapt resource value: 0x7f0a0047
 			public const int action_bar = 2131361863;
@@ -1846,17 +1867,17 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0024
 			public const int action_bar_title = 2131361828;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int action_container = 2131361889;
+			// aapt resource value: 0x7f0a0068
+			public const int action_container = 2131361896;
 			
 			// aapt resource value: 0x7f0a0048
 			public const int action_context_bar = 2131361864;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int action_divider = 2131361896;
+			// aapt resource value: 0x7f0a006f
+			public const int action_divider = 2131361903;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int action_image = 2131361890;
+			// aapt resource value: 0x7f0a0069
+			public const int action_image = 2131361897;
 			
 			// aapt resource value: 0x7f0a0002
 			public const int action_menu_divider = 2131361794;
@@ -1873,11 +1894,11 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0026
 			public const int action_mode_close_button = 2131361830;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int action_text = 2131361891;
+			// aapt resource value: 0x7f0a006a
+			public const int action_text = 2131361898;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int actions = 2131361905;
+			// aapt resource value: 0x7f0a0078
+			public const int actions = 2131361912;
 			
 			// aapt resource value: 0x7f0a0027
 			public const int activity_chooser_view_content = 2131361831;
@@ -1900,14 +1921,14 @@ namespace Homework2
 			// aapt resource value: 0x7f0a002e
 			public const int buttonPanel = 2131361838;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int cancel_action = 2131361893;
+			// aapt resource value: 0x7f0a006c
+			public const int cancel_action = 2131361900;
 			
 			// aapt resource value: 0x7f0a003e
 			public const int checkbox = 2131361854;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int chronometer = 2131361901;
+			// aapt resource value: 0x7f0a0074
+			public const int chronometer = 2131361908;
 			
 			// aapt resource value: 0x7f0a001e
 			public const int collapseActionView = 2131361822;
@@ -1936,8 +1957,8 @@ namespace Homework2
 			// aapt resource value: 0x7f0a001b
 			public const int end = 2131361819;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int end_padder = 2131361911;
+			// aapt resource value: 0x7f0a007e
+			public const int end_padder = 2131361918;
 			
 			// aapt resource value: 0x7f0a0028
 			public const int expand_activities_button = 2131361832;
@@ -1957,17 +1978,11 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0057
 			public const int hour = 2131361879;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int hour1 = 2131361883;
-			
-			// aapt resource value: 0x7f0a005c
-			public const int hour2 = 2131361884;
-			
 			// aapt resource value: 0x7f0a002c
 			public const int icon = 2131361836;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int icon_group = 2131361906;
+			// aapt resource value: 0x7f0a0079
+			public const int icon_group = 2131361913;
 			
 			// aapt resource value: 0x7f0a001f
 			public const int ifRoom = 2131361823;
@@ -1975,14 +1990,14 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0029
 			public const int image = 2131361833;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int info = 2131361902;
-			
-			// aapt resource value: 0x7f0a0073
-			public const int line1 = 2131361907;
-			
 			// aapt resource value: 0x7f0a0075
-			public const int line3 = 2131361909;
+			public const int info = 2131361909;
+			
+			// aapt resource value: 0x7f0a007a
+			public const int line1 = 2131361914;
+			
+			// aapt resource value: 0x7f0a007c
+			public const int line3 = 2131361916;
 			
 			// aapt resource value: 0x7f0a005a
 			public const int linearLayout1 = 2131361882;
@@ -1993,20 +2008,14 @@ namespace Homework2
 			// aapt resource value: 0x7f0a002b
 			public const int list_item = 2131361835;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int media_actions = 2131361895;
+			// aapt resource value: 0x7f0a006e
+			public const int media_actions = 2131361902;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int middle = 2131361820;
 			
 			// aapt resource value: 0x7f0a0058
 			public const int minute = 2131361880;
-			
-			// aapt resource value: 0x7f0a005d
-			public const int minute1 = 2131361885;
-			
-			// aapt resource value: 0x7f0a005e
-			public const int minute2 = 2131361886;
 			
 			// aapt resource value: 0x7f0a0013
 			public const int multiply = 2131361811;
@@ -2020,14 +2029,14 @@ namespace Homework2
 			// aapt resource value: 0x7f0a000a
 			public const int normal = 2131361802;
 			
+			// aapt resource value: 0x7f0a0077
+			public const int notification_background = 2131361911;
+			
+			// aapt resource value: 0x7f0a0071
+			public const int notification_main_column = 2131361905;
+			
 			// aapt resource value: 0x7f0a0070
-			public const int notification_background = 2131361904;
-			
-			// aapt resource value: 0x7f0a006a
-			public const int notification_main_column = 2131361898;
-			
-			// aapt resource value: 0x7f0a0069
-			public const int notification_main_column_container = 2131361897;
+			public const int notification_main_column_container = 2131361904;
 			
 			// aapt resource value: 0x7f0a0030
 			public const int parentPanel = 2131361840;
@@ -2041,11 +2050,11 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0040
 			public const int radio = 2131361856;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int right_icon = 2131361903;
+			// aapt resource value: 0x7f0a0076
+			public const int right_icon = 2131361910;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int right_side = 2131361899;
+			// aapt resource value: 0x7f0a0072
+			public const int right_side = 2131361906;
 			
 			// aapt resource value: 0x7f0a0014
 			public const int screen = 2131361812;
@@ -2092,12 +2101,6 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0059
 			public const int second = 2131361881;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int second1 = 2131361887;
-			
-			// aapt resource value: 0x7f0a0060
-			public const int second2 = 2131361888;
-			
 			// aapt resource value: 0x7f0a0055
 			public const int select_dialog_listview = 2131361877;
 			
@@ -2128,8 +2131,8 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0017
 			public const int src_over = 2131361815;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int status_bar_latest_event_content = 2131361894;
+			// aapt resource value: 0x7f0a006d
+			public const int status_bar_latest_event_content = 2131361901;
 			
 			// aapt resource value: 0x7f0a0041
 			public const int submenuarrow = 2131361857;
@@ -2140,11 +2143,11 @@ namespace Homework2
 			// aapt resource value: 0x7f0a000b
 			public const int tabMode = 2131361803;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int text = 2131361910;
+			// aapt resource value: 0x7f0a007d
+			public const int text = 2131361917;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int text2 = 2131361908;
+			// aapt resource value: 0x7f0a007b
+			public const int text2 = 2131361915;
 			
 			// aapt resource value: 0x7f0a0035
 			public const int textSpacerNoButtons = 2131361845;
@@ -2152,8 +2155,8 @@ namespace Homework2
 			// aapt resource value: 0x7f0a0034
 			public const int textSpacerNoTitle = 2131361844;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int time = 2131361900;
+			// aapt resource value: 0x7f0a0073
+			public const int time = 2131361907;
 			
 			// aapt resource value: 0x7f0a002d
 			public const int title = 2131361837;
@@ -2305,10 +2308,10 @@ namespace Homework2
 			public const int analog_clock = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int AnalogClockViewLayout = 2130903068;
+			public const int DigitalClockViewLayout = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int DigitalClockViewLayout = 2130903069;
+			public const int LauncherLayout = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
 			public const int notification_action = 2130903070;
@@ -2356,22 +2359,19 @@ namespace Homework2
 			public const int notification_template_part_time = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int PrototypeViewLayout = 2130903085;
+			public const int select_dialog_item_material = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int select_dialog_item_material = 2130903086;
+			public const int select_dialog_multichoice_material = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int select_dialog_multichoice_material = 2130903087;
+			public const int select_dialog_singlechoice_material = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int select_dialog_singlechoice_material = 2130903088;
+			public const int SettingsViewLayout = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int SettingsViewLayout = 2130903089;
-			
-			// aapt resource value: 0x7f030032
-			public const int support_simple_spinner_dropdown_item = 2130903090;
+			public const int support_simple_spinner_dropdown_item = 2130903089;
 			
 			static Layout()
 			{
