@@ -1,27 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
+﻿using Android.App;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 
 using Com.Xenione.Digit;
-   
+
 namespace Homework2 {
 
-    [Activity(Label = "Clock Master")]
+    [Activity(Label = "Clock Master", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 
     public class DigitalClockView : Activity, IClockView {
 
         ClockController clockController = ClockController.Controller;
 
         // Use this to show the proper month in the view
-        string[] months = {"January", "February", "March", "April", "May",
+        private string[] months = {"January", "February", "March", "April", "May",
                             "June", "July", "August", "September", "October",
                             "November", "December"};
 

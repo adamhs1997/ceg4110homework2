@@ -7,7 +7,7 @@ using Android.Widget;
 
 namespace Homework2 {
 
-    [Activity(Label = "Clock Master")]
+    [Activity(Label = "Clock Master", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 
     public class ShowClocksView : Activity {
 
@@ -57,11 +57,20 @@ namespace Homework2 {
             mainLayout.AddView(clocksList);
 
             // Add button to open each clock
+            int analogClockNumber = 1, digitalClockNumber = 1;
             foreach (IClockView clock in currentClocks) {
                 Button current = new Button(this) {
-                    LayoutParameters = wrapContentLayout,
-                    Text = clock.GetType().ToString()
+                    LayoutParameters = wrapContentLayout
                 };
+
+                // Appropriately title our buttons
+                if (clock.GetType().ToString() == "Homework2.AnalogClockView") {
+                    current.Text = "Analog Clock " + analogClockNumber.ToString();
+                    analogClockNumber++;
+                } else {
+                    current.Text = "Digital Clock " + digitalClockNumber.ToString();
+                    digitalClockNumber++;
+                }
 
                 // Restart the clock we previously used on click
                 current.Click += (s, e) => {

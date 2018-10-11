@@ -4,15 +4,15 @@ using Android.Widget;
 
 namespace Homework2 {
 
-    [Activity(Label = "Clock Master")]
+    [Activity(Label = "Clock Master", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 
     public class SettingsView : Activity {
 
         // Hold on to an instance of the command list
-        CommandList _list = CommandList.Commands;
+        private CommandList _list = CommandList.Commands;
 
         // Use to update timing in the view
-        ClockController _controller = ClockController.Controller;
+        private ClockController _controller = ClockController.Controller;
 
         protected override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);

@@ -9,7 +9,7 @@ using Java.Util;
 
 namespace Homework2 {
 
-    [Activity(Label = "Clock Master")]
+    [Activity(Label = "Clock Master", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 
     public class AnalogClockView : Activity, IClockView {
 
@@ -19,7 +19,7 @@ namespace Homework2 {
         private ClockController clockController = ClockController.Controller;
 
         // Use this to show the proper month in the view
-        string[] months = {"January", "February", "March", "April", "May",
+        private string[] months = {"January", "February", "March", "April", "May",
                             "June", "July", "August", "September", "October",
                             "November", "December"};
 
