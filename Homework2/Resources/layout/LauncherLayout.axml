@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Main Menu"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainMenuText"
+        android:gravity="center"
+        android:textColor="#FFFFFF" />
+    <TextView
+        android:text="Select what you would like to do"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/InstructionText"
+        android:gravity="center" />
+    <Button
+        android:text="Add Digital Clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddDigital" />
+    <Button
+        android:text="Add Analog Clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddAnalog" />
+    <Button
+        android:text="View Open Clocks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ViewOpen" />
+    <Button
+        android:text="Change Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ViewSettings" />
+</LinearLayout>
