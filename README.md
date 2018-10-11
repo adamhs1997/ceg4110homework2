@@ -18,7 +18,17 @@ The Clock Master app is very simple. Upon opening the app, users are presented w
 
 To open a clock, users will need to choose the "View Open Clocks" option from the main menu. This will display a list of all clocks the user currently has open. Selecting one of these clocks will display the time to the user in the proper format. By default, the clock will match the current time of day. However, if the user has changed the time within the app, this time will be displayed on all open clocks.
 
+_A glance at the different clock views..._
+
+_Analog Clock_                                                                                                 |  _Digital Clock_
+:-------------------------------------------------------------------------------------------------------------:|:-------------------------:
+![](https://github.com/adamhs1997/ceg4110homework2/raw/master/Screenshots/Screenshot_2018-10-11-17-06-22.png)  |  ![](https://github.com/adamhs1997/ceg4110homework2/raw/master/Screenshots/Screenshot_2018-10-11-17-06-17.png)
+
 Going back to the main menu, users will see a fourth option that allows them to change settings in the app. Here, users can choose the hours, minutes, and seconds displayed on the clocks, as well as the month, day, and year displayed as the date. Users may only increment or decrement each of these six options one step at a time. It is _not_ possible to manually enter a new value from the device keyboard. Should the user choose to revert any changes made to the app's time, he or she may undo these from this menu as well. Changes that were undone can also be redone here.
+
+_The settings view_
+
+<img src="https://github.com/adamhs1997/ceg4110homework2/raw/master/Screenshots/Screenshot_2018-10-11-17-06-29.png" width="410">
 
 There is one important thing to note about the operation of this app while the time is being adjusted. _While the settings menu is open, the clock is stopped._ This is much like the way a wristwatch operates; in order to adjust the time, one must first stop the clock. As soon as the user finalizes his or her time settings and closes the menu, the clock again begins to tick with the newly set time. This was done so that the time settings window always displays the exact time the user can expect to see on the clock after the settings are changed.
 
