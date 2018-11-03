@@ -1,7 +1,7 @@
 ﻿namespace Homework2 {
 
     // Concrete command to implement month decreases
-
+ 
     class DecrementMonth : ICommand {
 
         // Hold our singleton command list and controller
